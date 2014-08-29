@@ -1,0 +1,24 @@
+<html>
+<head>
+	<title>Simple Swipe Detector</title>
+</head>
+
+<body>
+	
+	<div id="container" style=" border: 1px solid #000; display: block; height: 50%; width: 50%; margin: auto;"></div>
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="swipe.me.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			// initialize swipe functionality on an element
+			$('#container').swipe({
+				swipe: 	function(swipeDirection) {
+					alert(swipeDirection);
+				},
+				allowPageVertScroll: true,		
+			});
+		});
+	</script>
+</body>
+</html>
